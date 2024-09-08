@@ -19,7 +19,7 @@ const express = require( 'express' ),
   mongoose.set('useNewUrlParser', true);
   mongoose.set('useUnifiedTopology', true);
   mongoose.set('useCreateIndex', true);
-//mongoose.connect( 'mongodb://localhost:27017' );
+mongoose.connect( 'mongodb://localhost:27017' );
 mongoose.connect( process.env.MONGODB_URI || 'mongodb://localhost/recipe_db', {family:4} );
 
 
